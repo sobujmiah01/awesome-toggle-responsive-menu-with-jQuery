@@ -1,0 +1,94 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+/* ======================
+website design start
+========================= */
+.container-full-wrapper{
+    background-color:#ddd;
+    height: 100vh;
+    width: 100vw;
+}
+.container-full-wrapper .container-wrapper{
+    width: 100%;
+}
+.container-wrapper .row{
+   /*  overflow: hidden; */
+}
+.header-top{
+    position:relative;
+    width: 86%;
+    margin: 0 auto;
+    background-color:#0808;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-top .logo h1{
+    text-transform: capitalize;
+    font-weight: 900;
+    padding-right: 10px;
+}
+.navigation-section{
+    display: flex;
+}
+.navigation-section .nav-menu{
+    display: flex;
+}
+.navigation-section .nav-menu li{
+    line-height: 100%;
+    cursor: pointer;
+}
+.navigation-section .nav-menu li a{
+    color:black;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    text-transform: capitalize;
+    padding: 0px 10px;
+    font-family: roboto, arial, helvetica;
+    font-size: 18px;
+    font-weight: 500;
+}
+.navigation-section .nav-menu li:hover a{
+    color: darkolivegreen;
+}
+.toggle-icon{
+    padding-right: 1.3rem;
+    display: none;
+}
+@media  (max-width: 700px){
+    .toggle-icon{
+        display: inline-block;
+    }
+    .navigation-section .nav-menu{
+        position: absolute;
+        flex-direction: column;
+        left: 0px;
+        top: 2.3rem;
+        width: 100%;
+        padding: 1.2em;
+        background-color:#0808;
+        display:none;
+    }
+    .navigation-section .nav-menu li{
+        line-height: 1.6rem;
+
+    }
+    .navigation-section .nav-menu li:hover{
+        border-bottom: 1px solid #ddd;
+    }
+}
